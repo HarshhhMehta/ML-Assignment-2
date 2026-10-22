@@ -1,0 +1,86 @@
+{
+  "q3a_comparison": [
+    {
+      "Model": "Selected Single Tree (d=None)",
+      "Bias^2": 0.3758,
+      "Variance": 0.6183,
+      "Bias^2 + Var": 0.9942,
+      "Mean Test Acc (30 refits)": 0.5029,
+      "Std Test Acc": 0.0484
+    },
+    {
+      "Model": "Final Bagging (B=200, d=None)",
+      "Bias^2": 0.5074,
+      "Variance": 0.0214,
+      "Bias^2 + Var": 0.5288,
+      "Mean Test Acc (30 refits)": 0.7567,
+      "Std Test Acc": 0.0423
+    },
+    {
+      "Model": "Selected Boosting (d=4, T=100)",
+      "Bias^2": 0.8796,
+      "Variance": 0.0173,
+      "Bias^2 + Var": 0.8969,
+      "Mean Test Acc (30 refits)": 0.3242,
+      "Std Test Acc": 0.0844
+    }
+  ],
+  "q3b_depth_effect": [
+    {
+      "Depth Setting": "Shallow (depth=4)",
+      "Single Tree Bias^2": 0.8617,
+      "Bagging(100) Bias^2": 0.8849,
+      "Single Tree Var": 0.0711,
+      "Bagging(100) Var": 0.0131,
+      "Var Removed (%)": 81.59,
+      "Single Tree Mean Acc": 0.0938,
+      "Bagging(100) Mean Acc": 0.3083,
+      "Acc Gain (+)": 0.2146
+    },
+    {
+      "Depth Setting": "Deeper (depth=16)",
+      "Single Tree Bias^2": 0.6546,
+      "Bagging(100) Bias^2": 0.6657,
+      "Single Tree Var": 0.2164,
+      "Bagging(100) Var": 0.0207,
+      "Var Removed (%)": 90.44,
+      "Single Tree Mean Acc": 0.2762,
+      "Bagging(100) Mean Acc": 0.6125,
+      "Acc Gain (+)": 0.3362
+    },
+    {
+      "Depth Setting": "Selected/Unbounded (depth=None)",
+      "Single Tree Bias^2": 0.3758,
+      "Bagging(100) Bias^2": 0.5091,
+      "Single Tree Var": 0.6183,
+      "Bagging(100) Var": 0.0252,
+      "Var Removed (%)": 95.92,
+      "Single Tree Mean Acc": 0.5029,
+      "Bagging(100) Mean Acc": 0.7463,
+      "Acc Gain (+)": 0.2433
+    }
+  ],
+  "q3d_master": [
+    {
+      "Model": "Selected Single Tree (d=None)",
+      "Clean Test Acc": 0.6125,
+      "Masked Test Acc": 0.2875,
+      "Bias^2": 0.3758,
+      "Variance": 0.6183
+    },
+    {
+      "Model": "Final Bagging (B=200)",
+      "Clean Test Acc": 0.825,
+      "Masked Test Acc": 0.7125,
+      "Bias^2": 0.5074,
+      "Variance": 0.0214
+    },
+    {
+      "Model": "Selected Boosting (d=4, T=100)",
+      "Clean Test Acc": 0.3875,
+      "Masked Test Acc": 0.275,
+      "Bias^2": 0.8796,
+      "Variance": 0.0173
+    }
+  ]
+}

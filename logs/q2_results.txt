@@ -1,0 +1,52 @@
+======================================================================
+QUESTION 2: MULTI-CLASS SAMME BOOSTING
+======================================================================
+
+--- Q2(a): 3-Class Toy Dataset with SAMME Single Step ---
+True Labels y        : [0 0 1 1 2 2]
+Initial Weights w^(1): [0.1667 0.1667 0.1667 0.1667 0.1667 0.1667]
+Weak Learner Preds   : [0 0 1 1 1 1]
+Misclassified Mask   : [0 0 0 0 1 1]
+Weighted Error (eps) : 0.3333  (Threshold 1 - 1/K = 0.6667)
+Learner Weight alpha : 1.3863
+Updated Weights w^(2): [0.0833 0.0833 0.0833 0.0833 0.3333 0.3333]  (Sum = 1.0000)
+
+--- Q2(b): SAMME Hyperparameter Grid Search ---
+ max_depth  n_rounds  train_acc  val_acc  test_acc  fit_time_100
+         1        10     0.0500   0.0375    0.0375          5.79
+         1        25     0.0917   0.0500    0.0750          5.79
+         1        50     0.1833   0.1125    0.1250          5.79
+         1       100     0.2708   0.1875    0.2125          5.79
+         2        10     0.1125   0.0875    0.0875         11.36
+         2        25     0.1750   0.1375    0.1750         11.36
+         2        50     0.2417   0.1000    0.1125         11.36
+         2       100     0.5875   0.2750    0.2500         11.36
+         3        10     0.1750   0.1000    0.1125         16.87
+         3        25     0.3583   0.1750    0.1750         16.87
+         3        50     0.5125   0.2625    0.2875         16.87
+         3       100     0.7917   0.3500    0.3750         16.87
+         4        10     0.3333   0.2000    0.2250         22.16
+         4        25     0.7375   0.3500    0.3875         22.16
+         4        50     0.9167   0.3125    0.3500         22.16
+         4       100     0.9708   0.3250    0.3875         22.16
+
+Selected Boosting Config: depth=4, rounds=100
+
+--- Q2(c): Benchmark: Bagging vs. SAMME Boosting (Speed & Accuracy) ---
+              Method  Learners  train_acc  val_acc  test_acc  train_time_sec
+Bagging (depth=None)        25     1.0000   0.8250    0.8000           18.63
+  Boosting (depth=4)        25     0.7375   0.3500    0.3875            5.50
+Bagging (depth=None)        50     1.0000   0.8500    0.7875           37.63
+  Boosting (depth=4)        50     0.9167   0.3125    0.3500           11.05
+Bagging (depth=None)       100     1.0000   0.8750    0.8250           74.95
+  Boosting (depth=4)       100     0.9708   0.3250    0.3875           22.25
+
+--- Q2(d): Heaviest Training Face Diagnostics ---
+Hardest Sample Index  : #0 (True Class: 0)
+Initial Weight (t=1)   : 0.00417
+Peak Weight            : 0.08156 (at Round 82)
+Mean Weight (100 rds)  : 0.01641
+Correct Weak Classifications: 13 / 100 rounds
+
+SAMME (d=4, T=100) Clean Test Acc: 0.3875 (Conf: 0.1280)
+SAMME (d=4, T=100) Masked Test Acc: 0.2750 (Conf: 0.1304)

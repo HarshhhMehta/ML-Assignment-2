@@ -1,0 +1,215 @@
+{
+  "toy_example": {
+    "preds": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "err": 0.33333333333333337,
+    "alpha": 1.3862943611198904,
+    "w_next": [
+      0.08333333333333334,
+      0.08333333333333334,
+      0.08333333333333334,
+      0.08333333333333334,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "q2b_grid": [
+    {
+      "max_depth": 1,
+      "n_rounds": 10,
+      "train_acc": 0.05,
+      "val_acc": 0.0375,
+      "test_acc": 0.0375,
+      "fit_time_100": 5.79
+    },
+    {
+      "max_depth": 1,
+      "n_rounds": 25,
+      "train_acc": 0.0917,
+      "val_acc": 0.05,
+      "test_acc": 0.075,
+      "fit_time_100": 5.79
+    },
+    {
+      "max_depth": 1,
+      "n_rounds": 50,
+      "train_acc": 0.1833,
+      "val_acc": 0.1125,
+      "test_acc": 0.125,
+      "fit_time_100": 5.79
+    },
+    {
+      "max_depth": 1,
+      "n_rounds": 100,
+      "train_acc": 0.2708,
+      "val_acc": 0.1875,
+      "test_acc": 0.2125,
+      "fit_time_100": 5.79
+    },
+    {
+      "max_depth": 2,
+      "n_rounds": 10,
+      "train_acc": 0.1125,
+      "val_acc": 0.0875,
+      "test_acc": 0.0875,
+      "fit_time_100": 11.36
+    },
+    {
+      "max_depth": 2,
+      "n_rounds": 25,
+      "train_acc": 0.175,
+      "val_acc": 0.1375,
+      "test_acc": 0.175,
+      "fit_time_100": 11.36
+    },
+    {
+      "max_depth": 2,
+      "n_rounds": 50,
+      "train_acc": 0.2417,
+      "val_acc": 0.1,
+      "test_acc": 0.1125,
+      "fit_time_100": 11.36
+    },
+    {
+      "max_depth": 2,
+      "n_rounds": 100,
+      "train_acc": 0.5875,
+      "val_acc": 0.275,
+      "test_acc": 0.25,
+      "fit_time_100": 11.36
+    },
+    {
+      "max_depth": 3,
+      "n_rounds": 10,
+      "train_acc": 0.175,
+      "val_acc": 0.1,
+      "test_acc": 0.1125,
+      "fit_time_100": 16.87
+    },
+    {
+      "max_depth": 3,
+      "n_rounds": 25,
+      "train_acc": 0.3583,
+      "val_acc": 0.175,
+      "test_acc": 0.175,
+      "fit_time_100": 16.87
+    },
+    {
+      "max_depth": 3,
+      "n_rounds": 50,
+      "train_acc": 0.5125,
+      "val_acc": 0.2625,
+      "test_acc": 0.2875,
+      "fit_time_100": 16.87
+    },
+    {
+      "max_depth": 3,
+      "n_rounds": 100,
+      "train_acc": 0.7917,
+      "val_acc": 0.35,
+      "test_acc": 0.375,
+      "fit_time_100": 16.87
+    },
+    {
+      "max_depth": 4,
+      "n_rounds": 10,
+      "train_acc": 0.3333,
+      "val_acc": 0.2,
+      "test_acc": 0.225,
+      "fit_time_100": 22.16
+    },
+    {
+      "max_depth": 4,
+      "n_rounds": 25,
+      "train_acc": 0.7375,
+      "val_acc": 0.35,
+      "test_acc": 0.3875,
+      "fit_time_100": 22.16
+    },
+    {
+      "max_depth": 4,
+      "n_rounds": 50,
+      "train_acc": 0.9167,
+      "val_acc": 0.3125,
+      "test_acc": 0.35,
+      "fit_time_100": 22.16
+    },
+    {
+      "max_depth": 4,
+      "n_rounds": 100,
+      "train_acc": 0.9708,
+      "val_acc": 0.325,
+      "test_acc": 0.3875,
+      "fit_time_100": 22.16
+    }
+  ],
+  "q2c_benchmark": [
+    {
+      "Method": "Bagging (depth=None)",
+      "Learners": 25,
+      "train_acc": 1.0,
+      "val_acc": 0.825,
+      "test_acc": 0.8,
+      "train_time_sec": 18.63
+    },
+    {
+      "Method": "Boosting (depth=4)",
+      "Learners": 25,
+      "train_acc": 0.7375,
+      "val_acc": 0.35,
+      "test_acc": 0.3875,
+      "train_time_sec": 5.5
+    },
+    {
+      "Method": "Bagging (depth=None)",
+      "Learners": 50,
+      "train_acc": 1.0,
+      "val_acc": 0.85,
+      "test_acc": 0.7875,
+      "train_time_sec": 37.63
+    },
+    {
+      "Method": "Boosting (depth=4)",
+      "Learners": 50,
+      "train_acc": 0.9167,
+      "val_acc": 0.3125,
+      "test_acc": 0.35,
+      "train_time_sec": 11.05
+    },
+    {
+      "Method": "Bagging (depth=None)",
+      "Learners": 100,
+      "train_acc": 1.0,
+      "val_acc": 0.875,
+      "test_acc": 0.825,
+      "train_time_sec": 74.95
+    },
+    {
+      "Method": "Boosting (depth=4)",
+      "Learners": 100,
+      "train_acc": 0.9708,
+      "val_acc": 0.325,
+      "test_acc": 0.3875,
+      "train_time_sec": 22.25
+    }
+  ],
+  "hardest_sample": {
+    "index": 0,
+    "true_class": 0,
+    "peak_weight": 0.08156310489564472,
+    "peak_round": 82,
+    "correct_rounds_count": 13
+  },
+  "q2d_occlusion": {
+    "clean_acc": 0.3875,
+    "clean_conf": 0.12798990183738507,
+    "masked_acc": 0.275,
+    "masked_conf": 0.1303884983622577
+  }
+}
