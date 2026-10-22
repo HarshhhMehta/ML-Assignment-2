@@ -143,7 +143,7 @@ The complete CVPR two-column manuscript is located in `latex/main.tex`.
 - **Author:** Harsh
 - **Roll Number:** M26CSA013
 - **Repository:** https://github.com/HarshhhMehta/ML-Assignment-2
-- **Final Commit Hash:** `a0006f72efd33d07bd614fdedcc0efd414b17f05` (`a0006f7`)
+- **Final Commit Hash:** `0229710e3a243e0956c4a1c69fd7d07e6651814d` (`0229710`)
 
 ---
 
